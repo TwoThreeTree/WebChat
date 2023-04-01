@@ -13,13 +13,6 @@ const Sidebar = (props) => {
       <Search />
       <div className="chatslist">
         <Chats />
-        <Chats />
-        <Chats />
-        <Chats />
-        <Chats />
-        <Chats />
-        <Chats />
-        <Chats />
       </div>
     </div>
   );

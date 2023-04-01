@@ -5,11 +5,16 @@ import { faAdd } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import Messages from "./Messages";
 import Input from "./Input";
+import { ChatContext } from "../context/ChatContext";
+import { useContext } from "react";
+
 const Chat = (props) => {
+  const { data } = useContext(ChatContext);
+
   return (
     <div className="chat">
       <div className="chatInfo">
-        <span>Iron Man</span>
+        <span>{data.user?.displayName}</span>
         <div className="chatIcons">
           <FontAwesomeIcon icon={faEllipsisH} />
           <FontAwesomeIcon icon={faAdd} />
